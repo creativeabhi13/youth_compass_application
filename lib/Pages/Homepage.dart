@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:youth_compass_application/Pages/Admin.dart';
+import 'package:youth_compass_application/Pages/Grade.dart';
+import 'package:youth_compass_application/Pages/School.dart';
+import 'package:youth_compass_application/Pages/Score.dart';
+import 'package:youth_compass_application/Pages/Student.dart';
+import 'package:youth_compass_application/Pages/Task.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key ? key}) : super(key:key);
@@ -46,40 +52,54 @@ class _Dashboard extends State<Homepage> {
                     spacing: 20.0,
                     runSpacing: 20.0,
                     children: [
-                      SizedBox(
-                        width:160.0 ,
-                        height:160.0,
-                        child:Card(
-                          color:Color.fromARGB(255, 21, 21, 21),
-                          elevation:2.0,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0),
-                          ),
-                          child: Center(
-                            child:Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child:Column(
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            Navigator.pushReplacement(
+                                context, MaterialPageRoute(builder: (_) => Admin()));
+                          });
+                  },
+                        child: SizedBox(
+                          width:160.0 ,
+                          height:160.0,
+                          child:Card(
+                            color:Color.fromARGB(255, 21, 21, 21),
+                            elevation:2.0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Center(
+                              child:Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
 
-                                children: [
-                                  Image.asset("assets/Admin.png",width: 64.0,),
-                                SizedBox(height:16.0),
-                               Text("Admin",style:TextStyle(
-                              color:Colors.white,
-                              fontWeight:FontWeight.bold,
-                             fontSize:20.0,
-                            )),
-                            SizedBox(height: 5.0),
-                                  Text("3 Items",style: TextStyle(
-                                    color: Colors.white,
+                                  children: [
+                                    Image.asset("assets/Admin.png",width: 64.0,),
+                                  SizedBox(height:16.0),
+                                 Text("Admin",style:TextStyle(
+                                color:Colors.white,
+                                fontWeight:FontWeight.bold,
+                               fontSize:20.0,
+                              )),
+                              SizedBox(height: 5.0),
+                                    Text("3 Items",style: TextStyle(
+                                      color: Colors.white,
 
-                                  ),)
-                                ],
+                                    ),)
+                                  ],
+                                ) ,
                               ) ,
-                            ) ,
-                          ),
-                        )
+                            ),
+                          )
+                        ),
                       ),
-                      SizedBox(
+                      GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (_) => School()));
+                    });
+                  },child:SizedBox(
                           width:160.0 ,
                           height:160.0,
                           child:Card(
@@ -112,6 +132,15 @@ class _Dashboard extends State<Homepage> {
                             ),
                           )
                       ),
+                ),
+                      GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (_) =>Task()));
+                    });
+                  },
+                  child:
                       SizedBox(
                           width:160.0 ,
                           height:160.0,
@@ -145,7 +174,14 @@ class _Dashboard extends State<Homepage> {
                             ),
                           )
                       ),
-                      SizedBox(
+                ),
+                      GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (_) =>Student()));
+                    });
+                  },child:SizedBox(
                           width:160.0 ,
                           height:160.0,
                           child:Card(
@@ -178,6 +214,14 @@ class _Dashboard extends State<Homepage> {
                             ),
                           )
                       ),
+                ),
+                      GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (_) =>Score()));
+                    });
+                  },child:
                       SizedBox(
                           width:160.0 ,
                           height:160.0,
@@ -211,6 +255,14 @@ class _Dashboard extends State<Homepage> {
                             ),
                           )
                       ),
+                ),
+                      GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (_) =>Grade()));
+                    });
+                  },child:
                       SizedBox(
                           width:160.0 ,
                           height:160.0,
@@ -244,6 +296,7 @@ class _Dashboard extends State<Homepage> {
                             ),
                           )
                       ),
+                ),
                     ],
                   )
                 )
