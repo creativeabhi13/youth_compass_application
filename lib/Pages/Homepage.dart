@@ -48,7 +48,7 @@ class _Dashboard extends State<Homepage> {
                     children: [
                       SizedBox(
                         width:160.0 ,
-                        height:200.0,
+                        height:160.0,
                         child:Card(
                           color:Color.fromARGB(255, 21, 21, 21),
                           elevation:2.0,
@@ -61,21 +61,189 @@ class _Dashboard extends State<Homepage> {
                               child:Column(
 
                                 children: [
-                                  Image.asset("assets/Admin.png"),
+                                  Image.asset("assets/Admin.png",width: 64.0,),
                                 SizedBox(height:16.0),
                                Text("Admin",style:TextStyle(
                               color:Colors.white,
                               fontWeight:FontWeight.bold,
                              fontSize:20.0,
                             )),
+                            SizedBox(height: 5.0),
+                                  Text("3 Items",style: TextStyle(
+                                    color: Colors.white,
 
+                                  ),)
                                 ],
                               ) ,
                             ) ,
                           ),
                         )
-                      )
+                      ),
+                      SizedBox(
+                          width:160.0 ,
+                          height:160.0,
+                          child:Card(
+                            color:Color.fromARGB(255, 21, 21, 21),
+                            elevation:2.0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Center(
+                              child:Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
 
+                                  children: [
+                                    Image.asset("assets/school.png",width: 64.0,),
+                                    SizedBox(height:16.0),
+                                    Text("College",style:TextStyle(
+                                      color:Colors.white,
+                                      fontWeight:FontWeight.bold,
+                                      fontSize:20.0,
+                                    )),
+                                    SizedBox(height: 5.0),
+                                    Text("20 Items",style: TextStyle(
+                                      color: Colors.white,
+
+                                    ),)
+                                  ],
+                                ) ,
+                              ) ,
+                            ),
+                          )
+                      ),
+                      SizedBox(
+                          width:160.0 ,
+                          height:160.0,
+                          child:Card(
+                            color:Color.fromARGB(255, 21, 21, 21),
+                            elevation:2.0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Center(
+                              child:Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
+
+                                  children: [
+                                    Image.asset("assets/task.png",width: 64.0,),
+                                    SizedBox(height:16.0),
+                                    Text("Task",style:TextStyle(
+                                      color:Colors.white,
+                                      fontWeight:FontWeight.bold,
+                                      fontSize:20.0,
+                                    )),
+                                    SizedBox(height: 5.0),
+                                    Text("40 Items",style: TextStyle(
+                                      color: Colors.white,
+
+                                    ),)
+                                  ],
+                                ) ,
+                              ) ,
+                            ),
+                          )
+                      ),
+                      SizedBox(
+                          width:160.0 ,
+                          height:160.0,
+                          child:Card(
+                            color:Color.fromARGB(255, 21, 21, 21),
+                            elevation:2.0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Center(
+                              child:Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
+
+                                  children: [
+                                    Image.asset("assets/student.png",width: 64.0,),
+                                    SizedBox(height:16.0),
+                                    Text("Student",style:TextStyle(
+                                      color:Colors.white,
+                                      fontWeight:FontWeight.bold,
+                                      fontSize:20.0,
+                                    )),
+                                    SizedBox(height: 5.0),
+                                    Text("300 Items",style: TextStyle(
+                                      color: Colors.white,
+
+                                    ),)
+                                  ],
+                                ) ,
+                              ) ,
+                            ),
+                          )
+                      ),
+                      SizedBox(
+                          width:160.0 ,
+                          height:160.0,
+                          child:Card(
+                            color:Color.fromARGB(255, 21, 21, 21),
+                            elevation:2.0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Center(
+                              child:Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
+
+                                  children: [
+                                    Image.asset("assets/score.png",width: 64.0,),
+                                    SizedBox(height:16.0),
+                                    Text("Score",style:TextStyle(
+                                      color:Colors.white,
+                                      fontWeight:FontWeight.bold,
+                                      fontSize:20.0,
+                                    )),
+                                    SizedBox(height: 5.0),
+                                    Text("300 Items",style: TextStyle(
+                                      color: Colors.white,
+
+                                    ),)
+                                  ],
+                                ) ,
+                              ) ,
+                            ),
+                          )
+                      ),
+                      SizedBox(
+                          width:160.0 ,
+                          height:160.0,
+                          child:Card(
+                            color:Color.fromARGB(255, 21, 21, 21),
+                            elevation:2.0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Center(
+                              child:Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
+
+                                  children: [
+                                    Image.asset("assets/grade.png",width: 64.0,),
+                                    SizedBox(height:16.0),
+                                    Text("Grade",style:TextStyle(
+                                      color:Colors.white,
+                                      fontWeight:FontWeight.bold,
+                                      fontSize:20.0,
+                                    )),
+                                    SizedBox(height: 5.0),
+                                    Text("300 Items",style: TextStyle(
+                                      color: Colors.white,
+
+                                    ),)
+                                  ],
+                                ) ,
+                              ) ,
+                            ),
+                          )
+                      ),
                     ],
                   )
                 )
