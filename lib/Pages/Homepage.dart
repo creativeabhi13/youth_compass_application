@@ -20,7 +20,7 @@ class _Dashboard extends State<Homepage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body:SafeArea(
-        child:Column(
+        child: SingleChildScrollView(child:Column(
           crossAxisAlignment:CrossAxisAlignment.start ,
            children:[
              Padding(
@@ -308,7 +308,7 @@ class _Dashboard extends State<Homepage> {
         ) ,
       )
 
-
+      ),
     );
   }
 
