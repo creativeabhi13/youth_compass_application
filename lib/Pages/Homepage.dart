@@ -3,6 +3,7 @@ import 'package:youth_compass_application/Pages/Admin.dart';
 import 'package:youth_compass_application/Pages/Grade.dart';
 import 'package:youth_compass_application/Pages/School.dart';
 import 'package:youth_compass_application/Pages/Score.dart';
+import 'package:youth_compass_application/Pages/Side_menu.dart';
 import 'package:youth_compass_application/Pages/Student.dart';
 import 'package:youth_compass_application/Pages/Task.dart';
 
@@ -25,12 +26,18 @@ class _Dashboard extends State<Homepage> {
            children:[
              Padding(
                padding:const EdgeInsets.all(12.0) ,
-               child:Row(
+               child:GestureDetector(onTap: () {
+                 setState(() {
+                   Navigator.pushReplacement(context,
+                       MaterialPageRoute(builder: (_) => Side_menu()));
+                 });
+               },child:Row(
                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
                  children: [
                    Icon(Icons.menu, color:Colors.white,size:50.0),
                    Image.asset("assets/user.png",width: 50.0,)
                  ],
+               ),
                ),
              ),
              Padding(
