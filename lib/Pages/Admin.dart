@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class Admin extends StatefulWidget {
   const Admin({Key? key}) : super(key: key);
-
   @override
   State<Admin> createState() => _Admin();
 }
@@ -20,7 +19,7 @@ class _Admin extends State<Admin> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.menu, color: Colors.white, size: 50.0),
+                  const Icon(Icons.menu, color: Colors.white, size: 50.0),
                   Image.asset(
                     "assets/user.png",
                     width: 50.0,
@@ -28,8 +27,8 @@ class _Admin extends State<Admin> {
                 ],
               ),
           ),
-          Padding(
-              padding: const EdgeInsets.all(18.0),
+          const Padding(
+              padding: EdgeInsets.all(18.0),
               child: Text(
                 "Admin Panel",
                 style: TextStyle(
@@ -51,14 +50,14 @@ class _Admin extends State<Admin> {
                       onTap: () {
                         setState(() {
                           Navigator.pushReplacement(context,
-                              MaterialPageRoute(builder: (_) => Admin()));
+                              MaterialPageRoute(builder: (_) => const Admin()));
                         });
                       },
                       child: SizedBox(
                           width: 160.0,
                           height: 160.0,
                           child: Card(
-                            color: Color.fromARGB(255, 21, 21, 21),
+                            color: const Color.fromARGB(255, 21, 21, 21),
                             elevation: 2.0,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8.0),
@@ -72,15 +71,15 @@ class _Admin extends State<Admin> {
                                       "assets/Admin.png",
                                       width: 64.0,
                                     ),
-                                    SizedBox(height: 16.0),
-                                    Text("Admin",
+                                    const SizedBox(height: 16.0),
+                                    const Text("Admin",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20.0,
                                         )),
-                                    SizedBox(height: 5.0),
-                                    Text(
+                                    const SizedBox(height: 5.0),
+                                    const Text(
                                       "1 Items",
                                       style: TextStyle(
                                         color: Colors.white,
@@ -104,14 +103,14 @@ class _Admin extends State<Admin> {
                     onTap: () {
                       setState(() {
                         Navigator.pushReplacement(
-                            context, MaterialPageRoute(builder: (_) => Admin()));
+                            context, MaterialPageRoute(builder: (_) => const Admin()));
                       });
                     },
                     child: SizedBox(
                         width: 160.0,
                         height: 160.0,
                         child: Card(
-                          color: Color.fromARGB(255, 21, 21, 21),
+                          color: const Color.fromARGB(255, 21, 21, 21),
                           elevation: 2.0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8.0),
@@ -125,15 +124,15 @@ class _Admin extends State<Admin> {
                                     "assets/Admin.png",
                                     width: 64.0,
                                   ),
-                                  SizedBox(height: 16.0),
-                                  Text("Sub Admin",
+                                  const SizedBox(height: 16.0),
+                                  const Text("Sub Admin",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20.0,
                                       )),
-                                  SizedBox(height: 5.0),
-                                  Text(
+                                  const SizedBox(height: 5.0),
+                                  const Text(
                                     "1 Items",
                                     style: TextStyle(
                                       color: Colors.white,
@@ -154,14 +153,14 @@ class _Admin extends State<Admin> {
                   onTap: () {
                     setState(() {
                       Navigator.pushReplacement(
-                          context, MaterialPageRoute(builder: (_) => Admin()));
+                          context, MaterialPageRoute(builder: (_) => const Admin()));
                     });
                   },
                   child: SizedBox(
                       width: 160.0,
                       height: 160.0,
                       child: Card(
-                        color: Color.fromARGB(255, 21, 21, 21),
+                        color: const Color.fromARGB(255, 21, 21, 21),
                         elevation: 2.0,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0),
@@ -175,15 +174,15 @@ class _Admin extends State<Admin> {
                                   "assets/Admin.png",
                                   width: 64.0,
                                 ),
-                                SizedBox(height: 16.0),
-                                Text("Volunteer",
+                                const SizedBox(height: 16.0),
+                                const Text("Volunteer",
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20.0,
                                     )),
-                                SizedBox(height: 5.0),
-                                Text(
+                                const SizedBox(height: 5.0),
+                                const Text(
                                   "3 Items",
                                   style: TextStyle(
                                     color: Colors.white,

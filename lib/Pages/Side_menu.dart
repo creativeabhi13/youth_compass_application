@@ -19,7 +19,7 @@ class _Side_menu extends State<Side_menu>
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
-            children: [
+            children: const [
               ListTile(
                 leading: CircleAvatar(
                   backgroundColor: Colors.white24,
