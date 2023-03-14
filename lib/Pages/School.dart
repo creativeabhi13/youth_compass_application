@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Utils/AppDrawer.dart';
+
 class School extends StatefulWidget {
   const School({Key ? key}) : super(key:key);
   @override
@@ -7,37 +9,33 @@ class School extends StatefulWidget {
 }
 class _School extends State<School>
 {
+  final _registerFormKey = GlobalKey<FormState>();
+
+  final _nameTextController = TextEditingController();
+  final _emailTextController = TextEditingController();
+  final _passwordTextController = TextEditingController();
+
   @override
   Widget build(BuildContext context)
   {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.black,
+      drawer: const AppDrawer(),
+      appBar: AppBar(
+        toolbarHeight: 60,
+        title: const Text(
+          'Add School',
+          style: TextStyle(
+            fontSize: 30,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+      ),
       body: SafeArea(
         child:SingleChildScrollView(child: Column(
           children:[
-            Padding(
-              padding:const EdgeInsets.all(12.0) ,
-              child:Row(
-                mainAxisAlignment:MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.menu, color:Colors.white,size:50.0),
-                  Image.asset("assets/user.png",width: 50.0,)
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(18.0),
-              child:Text(
-                "Add School",
-                style:TextStyle(
-                  color:Colors.white,
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.start,
-              ),
-            ),
             Padding(
               padding: EdgeInsets.all(40.0),
               child: Center(
@@ -46,6 +44,7 @@ class _School extends State<School>
 
                     children: [
                       TextField(
+
                         keyboardType: TextInputType.name,
                         onChanged: (value) {
                           setState(() {
@@ -174,7 +173,7 @@ class _School extends State<School>
 
           ],
         ),
-      ),
+        ),
       ),
     );
   }
