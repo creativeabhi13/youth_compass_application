@@ -14,7 +14,7 @@ class _Score extends State<Score> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255,235,215,164),
       drawer: const AppDrawer(),
       appBar: AppBar(
         toolbarHeight: 60,

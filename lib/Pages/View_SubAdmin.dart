@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:youth_compass_application/Pages/AddSchool.dart';
-import 'package:youth_compass_application/Pages/ViewSchool.dart';
+import 'package:youth_compass_application/Pages/AddSubAdmin.dart';
 
 import '../Utils/AppDrawer.dart';
 
-class School extends StatefulWidget {
-  const School({Key? key}) : super(key: key);
+class View_SubAdmin extends StatefulWidget {
+  const View_SubAdmin({Key? key}) : super(key: key);
 
   @override
-  State<School> createState() => _School();
+  State<View_SubAdmin> createState() => _View_SubAdmin();
 }
 
-class _School extends State<School> {
+class _View_SubAdmin extends State<View_SubAdmin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +18,7 @@ class _School extends State<School> {
         appBar: AppBar(
           toolbarHeight: 60,
           title: const Text(
-            'School',
+            'View Sub-Admin',
             style: TextStyle(
               fontSize: 30,
             ),
@@ -39,11 +38,11 @@ class _School extends State<School> {
                       spacing: 20.0,
                       runSpacing: 20.0,
                       children: [
-                        GestureDetector(
+                   /*     GestureDetector(
                           onTap: () {
                             setState(() {
                               Navigator.pushReplacement(context,
-                                  MaterialPageRoute(builder: (_) => AddSchool()));
+                                  MaterialPageRoute(builder: (_) => AddSubAdmin()));
                             });
                           },
                           child: SizedBox(
@@ -61,11 +60,11 @@ class _School extends State<School> {
                                     child: Column(
                                       children: [
                                         Image.asset(
-                                          "assets/school.png",
+                                          "assets/Admin.png",
                                           width: 64.0,
                                         ),
                                         SizedBox(height: 16.0),
-                                        Text("Add School",
+                                        Text("Add Sub-Admin",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
@@ -96,7 +95,7 @@ class _School extends State<School> {
                             onTap: () {
                               setState(() {
                                 Navigator.pushReplacement(
-                                    context, MaterialPageRoute(builder: (_) => ViewSchool()));
+                                    context, MaterialPageRoute(builder: (_) => Admin()));
                               });
                             },
                             child: SizedBox(
@@ -114,11 +113,11 @@ class _School extends State<School> {
                                       child: Column(
                                         children: [
                                           Image.asset(
-                                            "assets/school.png",
+                                            "assets/Admin.png",
                                             width: 64.0,
                                           ),
                                           SizedBox(height: 16.0),
-                                          Text("View School",
+                                          Text("View Sub-Admin",
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold,
@@ -137,6 +136,7 @@ class _School extends State<School> {
                                   ),
                                 )),
                           ),
+                          */
                         ]))),
                 Padding(
                   padding: const EdgeInsets.all(12.0),

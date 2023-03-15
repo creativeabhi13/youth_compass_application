@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youth_compass_application/Utils/Hub.dart';
 
 import '../Utils/AppDrawer.dart';
 
@@ -14,7 +15,7 @@ class _Task extends State<Task>
   {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255,235,215,164),
       drawer: const AppDrawer(),
       appBar: AppBar(
         toolbarHeight: 60,

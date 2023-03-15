@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:youth_compass_application/Pages/Admin.dart';
 import 'package:youth_compass_application/Pages/Homepage.dart';
 import 'package:youth_compass_application/Pages/Task.dart';
 
@@ -21,6 +22,8 @@ class _HubScreenState extends State<HubScreen> {
       Homepage(),
       Task(),
       Student(),
+
+
     ];
     super.initState();
   }

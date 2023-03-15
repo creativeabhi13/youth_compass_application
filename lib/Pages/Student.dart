@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youth_compass_application/Utils/AppDrawer.dart';
 
 class Student extends StatefulWidget {
   const Student({Key ? key}) : super(key:key);
@@ -13,20 +14,23 @@ class _Student extends State<Student>
 
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255,235,215,164),
+      drawer: const AppDrawer(),
+      appBar: AppBar(
+        toolbarHeight: 60,
+        title: const Text(
+          'Score',
+          style: TextStyle(
+            fontSize: 30,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+      ),
       body: SafeArea(
         child: SingleChildScrollView(child: Column(
           children:[
-            Padding(
-              padding:const EdgeInsets.all(12.0) ,
-              child:Row(
-                mainAxisAlignment:MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.menu, color:Colors.white,size:50.0),
-                  Image.asset("assets/user.png",width: 50.0,)
-                ],
-              ),
-            ),
+
             Padding(
               padding: const EdgeInsets.all(18.0),
               child:Text(

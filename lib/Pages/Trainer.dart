@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:youth_compass_application/Pages/AddSchool.dart';
-import 'package:youth_compass_application/Pages/ViewSchool.dart';
+import 'package:youth_compass_application/Pages/AddTrainer.dart';
+import 'package:youth_compass_application/Pages/ViewTrainer.dart';
 
 import '../Utils/AppDrawer.dart';
 
-class School extends StatefulWidget {
-  const School({Key? key}) : super(key: key);
+class Trainer extends StatefulWidget {
+  const Trainer({Key? key}) : super(key: key);
 
   @override
-  State<School> createState() => _School();
+  State<Trainer> createState() => _Trainer();
 }
 
-class _School extends State<School> {
+class _Trainer extends State<Trainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class _School extends State<School> {
         appBar: AppBar(
           toolbarHeight: 60,
           title: const Text(
-            'School',
+            'Trainer',
             style: TextStyle(
               fontSize: 30,
             ),
@@ -43,7 +43,7 @@ class _School extends State<School> {
                           onTap: () {
                             setState(() {
                               Navigator.pushReplacement(context,
-                                  MaterialPageRoute(builder: (_) => AddSchool()));
+                                  MaterialPageRoute(builder: (_) => AddTrainer()));
                             });
                           },
                           child: SizedBox(
@@ -61,11 +61,11 @@ class _School extends State<School> {
                                     child: Column(
                                       children: [
                                         Image.asset(
-                                          "assets/school.png",
+                                          "assets/trainer.png",
                                           width: 64.0,
                                         ),
                                         SizedBox(height: 16.0),
-                                        Text("Add School",
+                                        Text("Add Trainer",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
@@ -96,7 +96,7 @@ class _School extends State<School> {
                             onTap: () {
                               setState(() {
                                 Navigator.pushReplacement(
-                                    context, MaterialPageRoute(builder: (_) => ViewSchool()));
+                                    context, MaterialPageRoute(builder: (_) => ViewTrainer()));
                               });
                             },
                             child: SizedBox(
@@ -114,11 +114,11 @@ class _School extends State<School> {
                                       child: Column(
                                         children: [
                                           Image.asset(
-                                            "assets/school.png",
+                                            "assets/trainer.png",
                                             width: 64.0,
                                           ),
                                           SizedBox(height: 16.0),
-                                          Text("View School",
+                                          Text("View Trainer",
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold,

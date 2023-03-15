@@ -1,7 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:youth_compass_application/Utils/Hub.dart';
 import 'Pages/Homepage.dart';
-
+import 'package:youth_compass_application/Utils/Hub.dart';
 
 
 void main()  async{
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Homepage(),
+      home:  HubScreen(),
     );
   }
 }
